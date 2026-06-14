@@ -23,8 +23,17 @@ media_libraries:
     public_url: https://media.hyunwoo.org
     prefix: cms-uploads/ # Optional
     jurisdiction: default # Optional; 'default' | 'eu' | 'fedramp'
-
+    
 collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About
+        file: content/pages/about.astro
+        fields:
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: richtext }
   - name: posts
     label: Posts
     label_singular: Post
