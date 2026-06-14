@@ -30,7 +30,7 @@ collections:
     files:
       - name: about
         label: About
-        file: content/pages/about.astro
+        file: content/pages/about.md
         fields:
           - { name: title, label: Title }
           - { name: body, label: Body, widget: richtext }
