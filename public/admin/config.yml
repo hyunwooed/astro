@@ -5,8 +5,24 @@ backend:
   repo: hyunwooed/astro
   auth_methods: [token]
 
+# Default media storage paths
 media_folder: /public/media
 public_folder: /media
+
+# Media provider features
+media_libraries:
+  default:
+    config:
+      max_file_size: 1024000 # default: Infinity
+      slugify_filename: true # default: false
+      transformations: # See the documentation for details
+  cloudflare_r2:
+    access_key_id: f8e652d523054d81d3824bb1ae3a51f5
+    bucket: bucket
+    account_id: dc14cfb137afeafec178849ea6ab3bed
+    public_url: https://media.hyunwoo.org
+    prefix: cms-uploads/ # Optional
+    jurisdiction: default # Optional; 'default' | 'eu' | 'fedramp'
 
 collections:
   - name: posts
