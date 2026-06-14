@@ -3,6 +3,7 @@
 backend:
   name: github
   repo: hyunwooed/astro
+  auth_methods: [token]
 
 media_folder: /public/media
 public_folder: /media
