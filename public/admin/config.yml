@@ -31,5 +31,7 @@ collections:
     folder: src/content/blog
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime, type: date }
+      - { label: Description, name: description, widget: richtext }
+      - { label: Published Date, name: pubDate, widget: datetime, type: date }
+      - { label: Hero Image, name: heroImage, widget: image }
       - { label: Body, name: body, widget: richtext }
